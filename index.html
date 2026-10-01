@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================= -->
+  <!-- EDITABLE: TÍTULO DE LA PÁGINA -->
+  <!-- ============================= -->
+  <title>NOMBRE DEL JUEGO | IHC</title>
+
+  <meta
+    name="description"
+    content="Documentación visual del desarrollo de un videojuego de supervivencia zombie en realidad virtual."
+  />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Creepster&family=Inter:wght@400;500;600;700;800&family=Special+Elite&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Fondo decorativo -->
+  <div class="page-noise" aria-hidden="true"></div>
+  <div class="page-vignette" aria-hidden="true"></div>
+
+  <!-- ========================= -->
+  <!-- NAVEGACIÓN PRINCIPAL -->
+  <!-- ========================= -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Navegación principal">
+
+      <!-- EDITABLE: nombre corto del juego -->
+      <a class="navbar__brand" href="#inicio">
+        NOMBRE DEL JUEGO
+      </a>
+
+      <button
+        class="navbar__toggle"
+        id="menu-toggle"
+        type="button"
+        aria-label="Abrir menú de navegación"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="navbar__menu" id="nav-menu">
+        <li><a class="nav-link active" href="#inicio">Inicio</a></li>
+        <li><a class="nav-link" href="#equipo">Equipo</a></li>
+        <li><a class="nav-link" href="#timeline">Línea de tiempo</a></li>
+        <li><a class="nav-link" href="#pruebas">Pruebas con usuarios</a></li>
+        <li><a class="nav-link" href="#feedback">Feedback</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========================= -->
+    <!-- HERO / PORTADA -->
+    <!-- ========================= -->
+    <section class="hero" id="inicio">
+
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content">
+        <div class="hero__grid">
+
+          <div class="hero__main reveal">
+
+            <!-- EDITABLE: curso -->
+            <p class="hero__eyebrow">
+              Interacción Humano-Computador
+            </p>
+
+            <!-- EDITABLE: nombre principal del juego -->
+            <h1 class="hero__title flicker">
+              NOMBRE DEL JUEGO
+            </h1>
+
+            <!-- EDITABLE: subtítulo -->
+            <p class="hero__subtitle">
+              Juego de supervivencia zombie en realidad virtual
+            </p>
+
+            <p class="hero__description">
+              Un recorrido visual por el proceso de conceptualización,
+              diseño, pruebas, implementación y mejora de un videojuego
+              de supervivencia contra zombies desarrollado en Unity
+              para lentes Oculus.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#timeline">
+                Ver el proceso
+              </a>
+
+              <a class="btn btn--ghost" href="#pruebas">
+                Ver pruebas
+              </a>
+            </div>
+
+          </div>
+
+          <aside class="hero__panel reveal" aria-label="Resumen del proyecto">
+
+            <div class="hero-card">
+              <span class="hero-card__label">Plataforma</span>
+              <strong class="hero-card__value">Unity + Oculus</strong>
+              <p class="hero-card__text">
+                Desarrollo de una experiencia inmersiva de supervivencia en realidad virtual.
+              </p>
+            </div>
+
+            <div class="hero-card">
+              <span class="hero-card__label">Equipo</span>
+              <strong class="hero-card__value">4 integrantes</strong>
+              <p class="hero-card__text">
+                Trabajo colaborativo con ramas de Git para distribuir tareas y fusionar avances.
+              </p>
+            </div>
+
+            <div class="hero-card">
+              <span class="hero-card__label">Proceso</span>
+              <strong class="hero-card__value">10 hitos clave</strong>
+              <p class="hero-card__text">
+                Desde la lluvia de ideas inicial hasta el prototipo presentado en clase.
+              </p>
+            </div>
+
+            <div class="hero-card">
+              <span class="hero-card__label">Evaluación</span>
+              <strong class="hero-card__value">Pruebas + feedback</strong>
+              <p class="hero-card__text">
+                Observación de usuarios, entrevistas y mejora progresiva de la experiencia.
+              </p>
+            </div>
+
+          </aside>
+
+        </div>
+      </div>
+
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <span></span>
+      </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- RESUMEN DEL PROYECTO -->
+    <!-- ========================= -->
+    <section class="overview section section--dark">
+      <div class="container">
+
+        <div class="section-heading section-heading--compact reveal">
+          <p class="section-heading__label">VISTA GENERAL</p>
+          <h2 class="section-heading__title">Resumen del proyecto</h2>
+          <p class="section-heading__text">
+            Esta página documenta visualmente cómo evolucionó el videojuego:
+            desde la definición de la idea, el storyboard y las primeras pruebas,
+            hasta el desarrollo técnico del prototipo y la retroalimentación de usuarios.
+          </p>
+        </div>
+
+        <div class="overview-grid">
+
+          <article class="overview-card reveal">
+            <h3>Problema</h3>
+            <p>
+              Diseñar una experiencia inmersiva de supervivencia que sea comprensible,
+              intensa y entretenida para el usuario dentro de un entorno VR.
+            </p>
+          </article>
+
+          <article class="overview-card reveal">
+            <h3>Solución</h3>
+            <p>
+              Crear un videojuego de supervivencia zombie en realidad virtual
+              con interacción, ambientación, narrativa y pruebas iterativas.
+            </p>
+          </article>
+
+          <article class="overview-card reveal">
+            <h3>Metodología</h3>
+            <p>
+              Lluvia de ideas, categorización, storyboard, actuación del flujo del juego,
+              desarrollo por partes, pruebas de usuario y refinamiento con feedback.
+            </p>
+          </article>
+
+          <article class="overview-card reveal">
+            <h3>Resultado</h3>
+            <p>
+              Un avance funcional del videojuego y una documentación clara del proceso
+              de diseño e implementación para el curso de IHC.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- EQUIPO -->
+    <!-- ========================= -->
+    <section class="section" id="equipo">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <p class="section-heading__label">01 / EQUIPO</p>
+          <h2 class="section-heading__title">El equipo</h2>
+          <p class="section-heading__text">
+            El proyecto fue desarrollado por un equipo de cuatro integrantes.
+            Cada miembro aportó ideas, participó en las etapas de diseño y asumió
+            responsabilidades específicas durante el desarrollo del videojuego.
+          </p>
+        </div>
+
+        <div class="team-grid">
+
+          <!-- ============================== -->
+          <!-- EDITABLE: INTEGRANTE 1 -->
+          <!-- Foto: img/equipo-1.jpg -->
+          <!-- ============================== -->
+          <article class="team-card reveal">
+            <figure class="team-card__figure">
+              <img
+                src="img/equipo-1.jpg"
+                alt="Fotografía del integrante Nombre 1"
+                class="team-card__image"
+              />
+            </figure>
+
+            <h3 class="team-card__name">Nombre 1</h3>
+            <p class="team-card__role">Integrante del equipo</p>
+            <p class="team-card__text">
+              Participó en la conceptualización, desarrollo y validación del proyecto.
+            </p>
+          </article>
+
+          <!-- ============================== -->
+          <!-- EDITABLE: INTEGRANTE 2 -->
+          <!-- Foto: img/equipo-2.jpg -->
+          <!-- ============================== -->
+          <article class="team-card reveal">
+            <figure class="team-card__figure">
+              <img
+                src="img/equipo-2.jpg"
+                alt="Fotografía del integrante Nombre 2"
+                class="team-card__image"
+              />
+            </figure>
+
+            <h3 class="team-card__name">Nombre 2</h3>
+            <p class="team-card__role">Integrante del equipo</p>
+            <p class="team-card__text">
+              Participó en la conceptualización, desarrollo y validación del proyecto.
+            </p>
+          </article>
+
+          <!-- ============================== -->
+          <!-- EDITABLE: INTEGRANTE 3 -->
+          <!-- Foto: img/equipo-3.jpg -->
+          <!-- ============================== -->
+          <article class="team-card reveal">
+            <figure class="team-card__figure">
+              <img
+                src="img/equipo-3.jpg"
+                alt="Fotografía del integrante Nombre 3"
+                class="team-card__image"
+              />
+            </figure>
+
+            <h3 class="team-card__name">Nombre 3</h3>
+            <p class="team-card__role">Integrante del equipo</p>
+            <p class="team-card__text">
+              Participó en la conceptualización, desarrollo y validación del proyecto.
+            </p>
+          </article>
+
+          <!-- ============================== -->
+          <!-- EDITABLE: INTEGRANTE 4 -->
+          <!-- Foto: img/equipo-4.jpg -->
+          <!-- ============================== -->
+          <article class="team-card reveal">
+            <figure class="team-card__figure">
+              <img
+                src="img/equipo-4.jpg"
+                alt="Fotografía del integrante Nombre 4"
+                class="team-card__image"
+              />
+            </figure>
+
+            <h3 class="team-card__name">Nombre 4</h3>
+            <p class="team-card__role">Integrante del equipo</p>
+            <p class="team-card__text">
+              Participó en la conceptualización, desarrollo y validación del proyecto.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- LÍNEA DE TIEMPO -->
+    <!-- ========================= -->
+    <section class="section section--dark timeline-section" id="timeline">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <p class="section-heading__label">02 / DESARROLLO</p>
+          <h2 class="section-heading__title">Línea de tiempo del desarrollo</h2>
+          <p class="section-heading__text">
+            A continuación se muestran los hitos más importantes del proceso.
+            En cada etapa se resume qué se hizo, qué aprendimos y cómo fue evolucionando
+            la propuesta hasta convertirse en un videojuego más definido y funcional.
+          </p>
+        </div>
+
+        <div class="timeline">
+
+          <!-- ==================================== -->
+          <!-- HITO 01 -->
+          <!-- ==================================== -->
+          <article class="timeline-item reveal">
+            <div class="timeline-marker">01</div>
+
+            <div class="timeline-card">
+              <div class="timeline-card__layout">
+
+                <div class="timeline-card__body">
+                  <span class="timeline-card__date">Fecha</span>
+                  <h3 class="timeline-card__title">Lluvia de ideas</h3>
+                  <p class="timeline-card__text">
+                    El proyecto comenzó con una lluvia de ideas en la que cada
+                    integrante propuso distintas posibilidades para el videojuego.
+                    Esta etapa nos permitió explorar conceptos, mecánicas y
+                    experiencias antes de elegir una dirección definitiva.
+                  </p>
+                </div>
+
+                <figure class="timeline-card__media">
+                  <img
+                    src="img/01-lluvia-ideas.jpg"
+                    alt="Lluvia de ideas inicial para el videojuego"
+                    class="lightbox-trigger"
+                    tabindex="0"
+                  />
+                </figure>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- ==================================== -->
+          <!-- HITO 02 -->
+          <!-- ==================================== -->
+          <article class="timeline-item reveal">
+            <div class="timeline-marker">02</div>
+
+            <div class="timeline-card">
+              <div class="timeline-card__layout timeline-card__layout--reverse">
+
+                <div class="timeline-card__body">
+                  <span class="timeline-card__date">Fecha</span>
+                  <h3 class="timeline-card__title">Agrupación por categorías</h3>
+                  <p class="timeline-card__text">
+                    Organizamos las propuestas por categorías, identificando
+                    similitudes, posibilidades técnicas y elementos en común.
+                    Después de comparar las alternativas logramos llegar a una
+                    idea final con la que todo el equipo estuvo de acuerdo.
+                  </p>
+                </div>
+
+                <figure class="timeline-card__media">
+                  <img
+                    src="img/02-agrupacion.jpg"
+                    alt="Agrupación de ideas por categorías"
+                    class="lightbox-trigger"
+                    tabindex="0"
+                  />
+                </figure>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- ==================================== -->
+          <!-- HITO 03 -->
+          <!-- ==================================== -->
+          <article class="timeline-item reveal">
+            <div class="timeline-marker">03</div>
+
+            <div class="timeline-card">
+              <div class="timeline-card__layout">
+
+                <div class="timeline-card__body">
+                  <span class="timeline-card__date">Fecha</span>
+                  <h3 class="timeline-card__title">Exposición de la idea final</h3>
+                  <p class="timeline-card__text">
+                    Presentamos en clase el cuadro correspondiente a nuestra idea
+                    final. La propuesta debía cumplir varios requisitos definidos
+                    durante el curso, por lo que llegar a una versión que integrara
+                    todas las condiciones fue uno de los primeros retos importantes.
+                  </p>
+                </div>
+
+                <figure class="timeline-card__media">
+                  <img
+                    src="img/03-exposicion.jpg"
+                    alt="Presentación en clase de la idea final del videojuego"
+                    class="lightbox-trigger"
+                    tabindex="0"
+                  />
+                </figure>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- ==================================== -->
+          <!-- HITO 04 -->
+          <!-- ==================================== -->
+          <article class="timeline-item reveal">
+            <div class="timeline-marker">04</div>
+
+            <div class="timeline-card">
+              <div class="timeline-card__layout timeline-card__layout--reverse">
+
+                <div class="timeline-card__body">
+                  <span class="timeline-card__date">Fecha</span>
+                  <h3 class="timeline-card__title">Unity y lentes Oculus</h3>
+                  <p class="timeline-card__text">
+                    Comenzamos la implementación utilizando Unity y los lentes
+                    Oculus. La configuración inicial de realidad virtual,
+                    controladores y entorno de ejecución presentó varios problemas,
+                    pero finalmente logramos establecer una base funcional para
+                    desarrollar el videojuego.
+                  </p>
+                </div>
+
+                <figure class="timeline-card__media">
+                  <img
+                    src="img/04-unity-oculus.jpg"
+                    alt="Configuración del proyecto en Unity con lentes Oculus"
+                    class="lightbox-trigger"
+                    tabindex="0"
+                  />
+                </figure>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- ==================================== -->
+          <!-- HITO 05 -->
+          <!-- ==================================== -->
+          <article class="timeline-item reveal">
+            <div class="timeline-marker">05</div>
+
+            <div class="timeline-card">
+              <div class="timeline-card__layout">
+
+                <div class="timeline-card__body">
+                  <span class="timeline-card__date">Fecha</span>
+                  <h3 class="timeline-card__title">Storytelling y storyboard</h3>
+                  <p class="timeline-card__text">
+                    Como parte del proceso de diseño desarrollamos el storytelling
+                    y el storyboard del juego. El equipo se reunió durante el fin
+                    de semana para representar mediante dibujos el recorrido,
+                    las situaciones y las principales interacciones del jugador.
+                  </p>
+                </div>
+
+                <figure class="timeline-card__media">
+                  <img
+                    src="img/05-storyboard.jpg"
+                    alt="Proceso de elaboración del storytelling y storyboard"
+                    class="lightbox-trigger"
+                    tabindex="0"
+                  />
+                </figure>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- ==================================== -->
+          <!-- HITO 06 -->
+          <!-- ==================================== -->
+          <article class="timeline-item reveal">
+            <div class="timeline-marker">06</div>
+
+            <div class="timeline-card">
+              <div class="timeline-card__layout timeline-card__layout--reverse">
+
+                <div class="timeline-card__body">
+                  <span class="timeline-card__date">Fecha</span>
+                  <h3 class="timeline-card__title">Presentación del storyboard</h3>
+                  <p class="timeline-card__text">
+                    Presentamos el storyboard en clase con una dinámica particular:
+                    nuestros compañeros debían interpretar de qué trataba el juego
+                    observando únicamente los dibujos. La actividad permitió comprobar
+                    que la propuesta podía entenderse visualmente sin explicaciones
+                    adicionales.
+                  </p>
+                </div>
+
+                <figure class="timeline-card__media">
+                  <img
+                    src="img/06-presentacion-storyboard.jpg"
+                    alt="Presentación del storyboard frente a la clase"
+                    class="lightbox-trigger"
+                    tabindex="0"
+                  />
+                </figure>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- ==================================== -->
+          <!-- HITO 07 -->
+          <!-- ==================================== -->
+          <article class="timeline-item reveal">
+            <div class="timeline-marker">07</div>
+
+            <div class="timeline-card">
+              <div class="timeline-card__layout">
+
+                <div class="timeline-card__body">
+                  <span class="timeline-card__date">Fecha</span>
+                  <h3 class="timeline-card__title">Prueba actuada con un usuario</h3>
+                  <p class="timeline-card__text">
+                    Antes de contar con una versión completa del videojuego,
+                    realizamos una prueba actuada para observar cómo reaccionaría
+                    una persona ante las situaciones planteadas. Nos caracterizamos
+                    como zombies, utilizamos armas de juguete y recreamos diferentes
+                    momentos del juego con un usuario que no conocía previamente
+                    la propuesta.
+                  </p>
+                </div>
+
+                <figure class="timeline-card__media">
+                  <img
+                    src="img/07-prueba-actuada.jpg"
+                    alt="Prueba actuada del videojuego con un usuario"
+                    class="lightbox-trigger"
+                    tabindex="0"
+                  />
+                </figure>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- ==================================== -->
+          <!-- HITO 08 -->
+          <!-- ==================================== -->
+          <article class="timeline-item reveal">
+            <div class="timeline-marker">08</div>
+
+            <div class="timeline-card">
+              <div class="timeline-card__layout timeline-card__layout--reverse">
+
+                <div class="timeline-card__body">
+                  <span class="timeline-card__date">Fecha</span>
+                  <h3 class="timeline-card__title">Feedback y nueva visión</h3>
+                  <p class="timeline-card__text">
+                    La retroalimentación obtenida durante las primeras pruebas
+                    amplió nuestra perspectiva sobre la experiencia que queríamos
+                    construir. A partir de estas observaciones comenzamos a ajustar
+                    decisiones de diseño y a desarrollar el videojuego de manera
+                    más concreta.
+                  </p>
+                </div>
+
+                <figure class="timeline-card__media">
+                  <img
+                    src="img/08-feedback.jpg"
+                    alt="Revisión del feedback obtenido durante las pruebas"
+                    class="lightbox-trigger"
+                    tabindex="0"
+                  />
+                </figure>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- ==================================== -->
+          <!-- HITO 09 -->
+          <!-- ==================================== -->
+          <article class="timeline-item reveal">
+            <div class="timeline-marker">09</div>
+
+            <div class="timeline-card">
+              <div class="timeline-card__layout">
+
+                <div class="timeline-card__body">
+                  <span class="timeline-card__date">Fecha</span>
+                  <h3 class="timeline-card__title">Desarrollo y más pruebas</h3>
+                  <p class="timeline-card__text">
+                    Dividimos el proyecto para que cada integrante pudiera desarrollar
+                    componentes específicos de forma paralela. Utilizamos ramas de
+                    Git para organizar el trabajo e integramos progresivamente los
+                    cambios mientras continuábamos realizando pruebas con usuarios.
+                  </p>
+                </div>
+
+                <figure class="timeline-card__media">
+                  <img
+                    src="img/09-desarrollo.jpg"
+                    alt="Proceso de desarrollo colaborativo del videojuego"
+                    class="lightbox-trigger"
+                    tabindex="0"
+                  />
+                </figure>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- ==================================== -->
+          <!-- HITO 10 -->
+          <!-- ==================================== -->
+          <article class="timeline-item reveal">
+            <div class="timeline-marker">10</div>
+
+            <div class="timeline-card">
+              <div class="timeline-card__layout timeline-card__layout--reverse">
+
+                <div class="timeline-card__body">
+                  <span class="timeline-card__date">Fecha</span>
+                  <h3 class="timeline-card__title">Presentación en clase</h3>
+                  <p class="timeline-card__text">
+                    Presentamos una versión funcional del avance del videojuego
+                    frente a la clase. Las observaciones de la profesora y de los
+                    compañeros sirvieron para detectar aspectos que todavía podían
+                    mejorar y orientar las siguientes iteraciones del proyecto.
+                  </p>
+                </div>
+
+                <figure class="timeline-card__media">
+                  <img
+                    src="img/10-presentacion.jpg"
+                    alt="Presentación del avance del videojuego en clase"
+                    class="lightbox-trigger"
+                    tabindex="0"
+                  />
+                </figure>
+
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- PRUEBAS CON USUARIOS -->
+    <!-- ========================= -->
+    <section class="section" id="pruebas">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <p class="section-heading__label">03 / PRUEBAS</p>
+          <h2 class="section-heading__title">Pruebas con usuarios</h2>
+          <p class="section-heading__text">
+            Durante el desarrollo realizamos sesiones de prueba para observar
+            cómo los usuarios entendían el objetivo del juego, reaccionaban
+            a los estímulos y se desenvolvían dentro de la propuesta inmersiva.
+          </p>
+        </div>
+
+        <div class="testing-highlights">
+
+          <article class="testing-highlight reveal">
+            <h3>¿Qué observamos?</h3>
+            <ul>
+              <li>Comprensión del objetivo principal del juego.</li>
+              <li>Reacción frente a los zombies y al entorno.</li>
+              <li>Nivel de inmersión durante la experiencia.</li>
+              <li>Fluidez en la interacción y respuesta del usuario.</li>
+            </ul>
+          </article>
+
+          <article class="testing-highlight reveal">
+            <h3>¿Para qué sirvió?</h3>
+            <ul>
+              <li>Detectar puntos confusos del flujo del juego.</li>
+              <li>Identificar mejoras en ambientación y narrativa.</li>
+              <li>Validar si la propuesta generaba interés e inmersión.</li>
+              <li>Recoger opiniones útiles para siguientes iteraciones.</li>
+            </ul>
+          </article>
+
+        </div>
+
+        <div class="video-grid">
+
+          <!-- ===================================== -->
+          <!-- EDITABLE: VIDEO DE YOUTUBE 1 -->
+          <!-- Sustituye TU_ID_VIDEO_1 -->
+          <!-- ===================================== -->
+          <article class="video-card reveal">
+
+            <div class="video-card__frame">
+              <iframe
+                src="https://www.youtube.com/embed/TU_ID_VIDEO_1"
+                title="Prueba con usuario 1"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="video-card__body">
+              <h3>Prueba con usuario 01</h3>
+              <p>
+                Registro de una sesión de prueba en la que se observó cómo
+                el usuario reaccionaba ante las situaciones y mecánicas del juego.
+              </p>
+            </div>
+
+          </article>
+
+          <!-- ===================================== -->
+          <!-- EDITABLE: VIDEO DE YOUTUBE 2 -->
+          <!-- Sustituye TU_ID_VIDEO_2 -->
+          <!-- ===================================== -->
+          <article class="video-card reveal">
+
+            <div class="video-card__frame">
+              <iframe
+                src="https://www.youtube.com/embed/TU_ID_VIDEO_2"
+                title="Prueba con usuario 2"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="video-card__body">
+              <h3>Prueba con usuario 02</h3>
+              <p>
+                Segunda sesión utilizada para seguir validando la experiencia,
+                el entendimiento del juego y la percepción del usuario.
+              </p>
+            </div>
+
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- FEEDBACK -->
+    <!-- ========================= -->
+    <section class="section section--dark" id="feedback">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <p class="section-heading__label">04 / FEEDBACK</p>
+          <h2 class="section-heading__title">Feedback de usuarios</h2>
+          <p class="section-heading__text">
+            Después de las pruebas realizamos entrevistas breves para conocer
+            la percepción de los usuarios respecto al juego, su nivel de inmersión,
+            los aspectos que más llamaron su atención y los puntos que debían mejorar.
+          </p>
+        </div>
+
+        <div class="feedback-summary reveal">
+          <article class="feedback-summary__card">
+            <h3>Hallazgos principales</h3>
+            <ul>
+              <li>La ambientación y la temática zombie resultaron atractivas.</li>
+              <li>La experiencia se percibió más inmersiva al incorporar actuación y escenificación.</li>
+              <li>Los usuarios valoraron mejor la idea cuando entendieron claramente el objetivo del juego.</li>
+              <li>El feedback ayudó a definir nuevas mejoras en desarrollo, ambientación e interacción.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="feedback-grid">
+
+          <!-- ===================================== -->
+          <!-- EDITABLE: FEEDBACK 1 -->
+          <!-- ===================================== -->
+          <article class="feedback-card reveal">
+            <span class="feedback-card__tag">Usuario 01</span>
+            <p class="feedback-card__quote">
+              “La idea me pareció interesante y más inmersiva de lo que esperaba,
+              especialmente por la ambientación y la forma en que se representó la experiencia.”
+            </p>
+            <p class="feedback-card__insight">
+              Insight: reforzar la inmersión y mantener una introducción clara al objetivo del juego.
+            </p>
+          </article>
+
+          <!-- ===================================== -->
+          <!-- EDITABLE: FEEDBACK 2 -->
+          <!-- ===================================== -->
+          <article class="feedback-card reveal">
+            <span class="feedback-card__tag">Usuario 02</span>
+            <p class="feedback-card__quote">
+              “Entendí la propuesta general, pero creo que algunas acciones podrían explicarse mejor
+              para que el jugador se adapte más rápido.”
+            </p>
+            <p class="feedback-card__insight">
+              Insight: mejorar la explicación inicial, señales del entorno y orientación al usuario.
+            </p>
+          </article>
+
+          <!-- ===================================== -->
+          <!-- EDITABLE: FEEDBACK 3 -->
+          <!-- ===================================== -->
+          <article class="feedback-card reveal">
+            <span class="feedback-card__tag">Usuario 03</span>
+            <p class="feedback-card__quote">
+              “Lo que más me gustó fue que no solo vi una idea, sino que sentí que ya tenía una forma concreta
+              de convertirse en videojuego.”
+            </p>
+            <p class="feedback-card__insight">
+              Insight: seguir fortaleciendo la conexión entre narrativa, interacción y prototipo funcional.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================= -->
+  <!-- FOOTER -->
+  <!-- ========================= -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <!-- EDITABLE: nombre del juego -->
+      <p>
+        <span>NOMBRE DEL JUEGO</span>
+        · Interacción Humano-Computador · 2026
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- ========================= -->
+  <!-- LIGHTBOX DE IMÁGENES -->
+  <!-- ========================= -->
+  <div
+    class="lightbox"
+    id="lightbox"
+    aria-hidden="true"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Vista ampliada de imagen"
+  >
+    <button
+      class="lightbox__close"
+      id="lightbox-close"
+      type="button"
+      aria-label="Cerrar imagen ampliada"
+    >
+      &times;
+    </button>
+
+    <div class="lightbox__content">
+      <img
+        src=""
+        alt=""
+        id="lightbox-image"
+      />
+
+      <p
+        class="lightbox__caption"
+        id="lightbox-caption"
+      ></p>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
