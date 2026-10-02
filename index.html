@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
 
   <!-- ============================= -->
   <!-- EDITABLE: TÍTULO DE LA PÁGINA -->
   <!-- ============================= -->
-  <title>NOMBRE DEL JUEGO | IHC</title>
+  <title>El último en pie | IHC</title>
 
   <meta
     name="description"
-    content="Documentación visual del desarrollo de un videojuego de supervivencia zombie en realidad virtual."
+    content="El último en pie: prototipo de supervivencia zombie en realidad virtual con cabaña, entorno lluvioso, oleadas y combate con armas mediante seguimiento de manos."
   />
 
   <!-- Google Fonts -->
@@ -40,7 +41,7 @@
 
       <!-- EDITABLE: nombre corto del juego -->
       <a class="navbar__brand" href="#inicio">
-        NOMBRE DEL JUEGO
+        El último en pie
       </a>
 
       <button
@@ -88,7 +89,7 @@
 
             <!-- EDITABLE: nombre principal del juego -->
             <h1 class="hero__title flicker">
-              NOMBRE DEL JUEGO
+              El último en pie
             </h1>
 
             <!-- EDITABLE: subtítulo -->
@@ -97,10 +98,10 @@
             </p>
 
             <p class="hero__description">
-              Un recorrido visual por el proceso de conceptualización,
-              diseño, pruebas, implementación y mejora de un videojuego
-              de supervivencia contra zombies desarrollado en Unity
-              para lentes Oculus.
+              Prototipo de supervivencia zombie en realidad virtual ambientado
+              entre una cabaña y su entorno exterior. Integra oleadas de enemigos,
+              combate con armas mediante seguimiento de manos, lluvia, relámpagos
+              y transmisiones de radio.
             </p>
 
             <div class="hero__actions">
@@ -119,9 +120,9 @@
 
             <div class="hero-card">
               <span class="hero-card__label">Plataforma</span>
-              <strong class="hero-card__value">Unity + Oculus</strong>
+              <strong class="hero-card__value">Unity + Meta Quest</strong>
               <p class="hero-card__text">
-                Desarrollo de una experiencia inmersiva de supervivencia en realidad virtual.
+                Experiencia XR con seguimiento de manos e interacción con armas.
               </p>
             </div>
 
@@ -134,10 +135,10 @@
             </div>
 
             <div class="hero-card">
-              <span class="hero-card__label">Proceso</span>
-              <strong class="hero-card__value">10 hitos clave</strong>
+              <span class="hero-card__label">Supervivencia</span>
+              <strong class="hero-card__value">Oleadas progresivas</strong>
               <p class="hero-card__text">
-                Desde la lluvia de ideas inicial hasta el prototipo presentado en clase.
+                Cinco configuraciones con zombies base, rápidos, tanque y jefe.
               </p>
             </div>
 
@@ -145,7 +146,7 @@
               <span class="hero-card__label">Evaluación</span>
               <strong class="hero-card__value">Pruebas + feedback</strong>
               <p class="hero-card__text">
-                Observación de usuarios, entrevistas y mejora progresiva de la experiencia.
+                Pruebas de uso y checklist técnico para el tracking y las físicas en Quest.
               </p>
             </div>
 
@@ -170,9 +171,9 @@
           <p class="section-heading__label">VISTA GENERAL</p>
           <h2 class="section-heading__title">Resumen del proyecto</h2>
           <p class="section-heading__text">
-            Esta página documenta visualmente cómo evolucionó el videojuego:
-            desde la definición de la idea, el storyboard y las primeras pruebas,
-            hasta el desarrollo técnico del prototipo y la retroalimentación de usuarios.
+            El último en pie es un prototipo de supervivencia zombie para realidad
+            virtual. El proyecto combina una cabaña ambientada, un exterior lluvioso,
+            combate con seguimiento de manos y supervivencia por oleadas.
           </p>
         </div>
 
@@ -181,16 +182,16 @@
           <article class="overview-card reveal">
             <h3>Problema</h3>
             <p>
-              Diseñar una experiencia inmersiva de supervivencia que sea comprensible,
-              intensa y entretenida para el usuario dentro de un entorno VR.
+              Crear una experiencia VR que combine un objetivo claro, interacción
+              física con armas, amenazas legibles y una ambientación inmersiva.
             </p>
           </article>
 
           <article class="overview-card reveal">
             <h3>Solución</h3>
             <p>
-              Crear un videojuego de supervivencia zombie en realidad virtual
-              con interacción, ambientación, narrativa y pruebas iterativas.
+              Un prototipo en Unity con cabaña y exterior lluvioso, mensajes de radio,
+              armas manipulables con hand tracking y oleadas de zombies de distintos tipos.
             </p>
           </article>
 
@@ -198,15 +199,17 @@
             <h3>Metodología</h3>
             <p>
               Lluvia de ideas, categorización, storyboard, actuación del flujo del juego,
-              desarrollo por partes, pruebas de usuario y refinamiento con feedback.
+              desarrollo por responsabilidades, integración de sistemas y pruebas
+              iterativas con usuarios, junto con validación técnica planificada en el visor.
             </p>
           </article>
 
           <article class="overview-card reveal">
             <h3>Resultado</h3>
             <p>
-              Un avance funcional del videojuego y una documentación clara del proceso
-              de diseño e implementación para el curso de IHC.
+              El prototipo integra cinco configuraciones de oleadas, supervivencia durante
+              180 segundos, salud del jugador y condiciones de victoria y derrota. La
+              validación final de seguimiento de manos y físicas en Quest sigue pendiente.
             </p>
           </article>
 
@@ -226,90 +229,86 @@
           <h2 class="section-heading__title">El equipo</h2>
           <p class="section-heading__text">
             El proyecto fue desarrollado por un equipo de cuatro integrantes.
-            Cada miembro aportó ideas, participó en las etapas de diseño y asumió
-            responsabilidades específicas durante el desarrollo del videojuego.
+            El trabajo se dividió entre el escenario interior, los zombies y sus oleadas,
+            el entorno exterior y clima, y el seguimiento de manos y las armas VR.
           </p>
         </div>
 
         <div class="team-grid">
 
-          <!-- ============================== -->
-          <!-- EDITABLE: INTEGRANTE 1 -->
-          <!-- Foto: img/equipo-1.jpg -->
-          <!-- ============================== -->
           <article class="team-card reveal">
             <figure class="team-card__figure">
               <img
-                src="img/equipo-1.jpg"
-                alt="Fotografía del integrante Nombre 1"
-                class="team-card__image"
+                src="img/mariana.jpeg"
+                alt="Fotografía de Mariana Luis"
+                class="team-card__image team-card__image--mariana"
+                loading="lazy"
+                decoding="async"
               />
             </figure>
 
-            <h3 class="team-card__name">Nombre 1</h3>
-            <p class="team-card__role">Integrante del equipo</p>
+            <h3 class="team-card__name">Mariana Luis</h3>
+            <p class="team-card__role">Escenario interior y ambientación</p>
             <p class="team-card__text">
-              Participó en la conceptualización, desarrollo y validación del proyecto.
+              Diseñó la cabaña y el escenario interior. Se encargó de la iluminación,
+              los objetos de la cabaña y los sonidos de la radio.
             </p>
           </article>
 
-          <!-- ============================== -->
-          <!-- EDITABLE: INTEGRANTE 2 -->
-          <!-- Foto: img/equipo-2.jpg -->
-          <!-- ============================== -->
           <article class="team-card reveal">
             <figure class="team-card__figure">
               <img
-                src="img/equipo-2.jpg"
-                alt="Fotografía del integrante Nombre 2"
-                class="team-card__image"
+                src="img/claudia.jpeg"
+                alt="Fotografía de Claudia Agostinelli"
+                class="team-card__image team-card__image--claudia"
+                loading="lazy"
+                decoding="async"
               />
             </figure>
 
-            <h3 class="team-card__name">Nombre 2</h3>
-            <p class="team-card__role">Integrante del equipo</p>
+            <h3 class="team-card__name">Claudia Agostinelli</h3>
+            <p class="team-card__role">Zombies y sistema de oleadas</p>
             <p class="team-card__text">
-              Participó en la conceptualización, desarrollo y validación del proyecto.
+              Desarrolló los zombies, sus animaciones y su comportamiento, además del
+              sistema de oleadas y los distintos tipos de enemigos.
             </p>
           </article>
 
-          <!-- ============================== -->
-          <!-- EDITABLE: INTEGRANTE 3 -->
-          <!-- Foto: img/equipo-3.jpg -->
-          <!-- ============================== -->
           <article class="team-card reveal">
             <figure class="team-card__figure">
               <img
-                src="img/equipo-3.jpg"
-                alt="Fotografía del integrante Nombre 3"
-                class="team-card__image"
+                src="img/sebastian.jpeg"
+                alt="Fotografía de Sebastian Himan"
+                class="team-card__image team-card__image--sebastian"
+                loading="lazy"
+                decoding="async"
               />
             </figure>
 
-            <h3 class="team-card__name">Nombre 3</h3>
-            <p class="team-card__role">Integrante del equipo</p>
+            <h3 class="team-card__name">Sebastian Himan</h3>
+            <p class="team-card__role">Seguimiento de manos y armas VR</p>
             <p class="team-card__text">
-              Participó en la conceptualización, desarrollo y validación del proyecto.
+              Implementó el hand tracking y las armas —hacha, bate, pistola y escopeta—,
+              ajustando su agarre, interacción y física con los objetos.
             </p>
           </article>
 
-          <!-- ============================== -->
-          <!-- EDITABLE: INTEGRANTE 4 -->
-          <!-- Foto: img/equipo-4.jpg -->
-          <!-- ============================== -->
           <article class="team-card reveal">
             <figure class="team-card__figure">
               <img
-                src="img/equipo-4.jpg"
-                alt="Fotografía del integrante Nombre 4"
-                class="team-card__image"
+                src="img/kerin.jpeg"
+                alt="Fotografía de Kerin Larico"
+                class="team-card__image team-card__image--kerin"
+                loading="lazy"
+                decoding="async"
               />
             </figure>
 
-            <h3 class="team-card__name">Nombre 4</h3>
-            <p class="team-card__role">Integrante del equipo</p>
+            <h3 class="team-card__name">Kerin Larico</h3>
+            <p class="team-card__role">Escenario exterior y clima</p>
             <p class="team-card__text">
-              Participó en la conceptualización, desarrollo y validación del proyecto.
+              Trabajó en el escenario exterior y sus elementos ambientales, incluida
+              la lluvia y su sonido, además de otros detalles del entorno.
             </p>
           </article>
 
@@ -346,7 +345,7 @@
               <div class="timeline-card__layout">
 
                 <div class="timeline-card__body">
-                  <span class="timeline-card__date">Fecha</span>
+
                   <h3 class="timeline-card__title">Lluvia de ideas</h3>
                   <p class="timeline-card__text">
                     El proyecto comenzó con una lluvia de ideas en la que cada
@@ -356,13 +355,16 @@
                   </p>
                 </div>
 
-                <figure class="timeline-card__media">
+                <figure class="timeline-card__media timeline-card__media--document">
                   <img
                     src="img/01-lluvia-ideas.jpg"
-                    alt="Lluvia de ideas inicial para el videojuego"
+                    alt="Propuestas individuales del equipo y agrupación inicial de ideas."
                     class="lightbox-trigger"
+                    loading="lazy"
+                    decoding="async"
                     tabindex="0"
                   />
+                  <figcaption>Propuestas individuales del equipo y agrupación inicial de ideas.</figcaption>
                 </figure>
 
               </div>
@@ -379,7 +381,7 @@
               <div class="timeline-card__layout timeline-card__layout--reverse">
 
                 <div class="timeline-card__body">
-                  <span class="timeline-card__date">Fecha</span>
+
                   <h3 class="timeline-card__title">Agrupación por categorías</h3>
                   <p class="timeline-card__text">
                     Organizamos las propuestas por categorías, identificando
@@ -389,13 +391,16 @@
                   </p>
                 </div>
 
-                <figure class="timeline-card__media">
+                <figure class="timeline-card__media timeline-card__media--document">
                   <img
                     src="img/02-agrupacion.jpg"
-                    alt="Agrupación de ideas por categorías"
+                    alt="Cuadro de ideas organizado por categorías para elegir la propuesta."
                     class="lightbox-trigger"
+                    loading="lazy"
+                    decoding="async"
                     tabindex="0"
                   />
+                  <figcaption>Cuadro de ideas organizado por categorías para elegir la propuesta.</figcaption>
                 </figure>
 
               </div>
@@ -412,7 +417,7 @@
               <div class="timeline-card__layout">
 
                 <div class="timeline-card__body">
-                  <span class="timeline-card__date">Fecha</span>
+
                   <h3 class="timeline-card__title">Exposición de la idea final</h3>
                   <p class="timeline-card__text">
                     Presentamos en clase el cuadro correspondiente a nuestra idea
@@ -422,13 +427,16 @@
                   </p>
                 </div>
 
-                <figure class="timeline-card__media">
+                <figure class="timeline-card__media timeline-card__media--document">
                   <img
                     src="img/03-exposicion.jpg"
-                    alt="Presentación en clase de la idea final del videojuego"
+                    alt="Storytelling: objetivo, amenazas, interacción con armas y señales de audio."
                     class="lightbox-trigger"
+                    loading="lazy"
+                    decoding="async"
                     tabindex="0"
                   />
+                  <figcaption>Storytelling: objetivo, amenazas, interacción con armas y señales de audio.</figcaption>
                 </figure>
 
               </div>
@@ -445,7 +453,7 @@
               <div class="timeline-card__layout timeline-card__layout--reverse">
 
                 <div class="timeline-card__body">
-                  <span class="timeline-card__date">Fecha</span>
+
                   <h3 class="timeline-card__title">Unity y lentes Oculus</h3>
                   <p class="timeline-card__text">
                     Comenzamos la implementación utilizando Unity y los lentes
@@ -459,10 +467,13 @@
                 <figure class="timeline-card__media">
                   <img
                     src="img/04-unity-oculus.jpg"
-                    alt="Configuración del proyecto en Unity con lentes Oculus"
+                    alt="Fotograma de una prueba del prototipo en Unity con visor VR · Usuario 01."
                     class="lightbox-trigger"
+                    loading="lazy"
+                    decoding="async"
                     tabindex="0"
                   />
+                  <figcaption>Fotograma de una prueba del prototipo en Unity con visor VR · Usuario 01. <a href="https://youtu.be/yBjjnt1almg" target="_blank" rel="noopener">Ver video</a></figcaption>
                 </figure>
 
               </div>
@@ -479,7 +490,7 @@
               <div class="timeline-card__layout">
 
                 <div class="timeline-card__body">
-                  <span class="timeline-card__date">Fecha</span>
+
                   <h3 class="timeline-card__title">Storytelling y storyboard</h3>
                   <p class="timeline-card__text">
                     Como parte del proceso de diseño desarrollamos el storytelling
@@ -489,13 +500,16 @@
                   </p>
                 </div>
 
-                <figure class="timeline-card__media">
+                <figure class="timeline-card__media timeline-card__media--document">
                   <img
                     src="img/05-storyboard.jpg"
-                    alt="Proceso de elaboración del storytelling y storyboard"
+                    alt="Storyboard original: escenas dibujadas y secuencia de interacción."
                     class="lightbox-trigger"
+                    loading="lazy"
+                    decoding="async"
                     tabindex="0"
                   />
+                  <figcaption>Storyboard original: escenas dibujadas y secuencia de interacción.</figcaption>
                 </figure>
 
               </div>
@@ -512,7 +526,7 @@
               <div class="timeline-card__layout timeline-card__layout--reverse">
 
                 <div class="timeline-card__body">
-                  <span class="timeline-card__date">Fecha</span>
+
                   <h3 class="timeline-card__title">Presentación del storyboard</h3>
                   <p class="timeline-card__text">
                     Presentamos el storyboard en clase con una dinámica particular:
@@ -523,13 +537,16 @@
                   </p>
                 </div>
 
-                <figure class="timeline-card__media">
+                <figure class="timeline-card__media timeline-card__media--document">
                   <img
-                    src="img/06-presentacion-storyboard.jpg"
-                    alt="Presentación del storyboard frente a la clase"
+                    src="img/06-presentacion-storyboard.png"
+                    alt="Detalle del storyboard: uso de armas, recarga y señales de radio."
                     class="lightbox-trigger"
+                    loading="lazy"
+                    decoding="async"
                     tabindex="0"
                   />
+                  <figcaption>Detalle del storyboard: uso de armas, recarga y señales de radio.</figcaption>
                 </figure>
 
               </div>
@@ -546,7 +563,7 @@
               <div class="timeline-card__layout">
 
                 <div class="timeline-card__body">
-                  <span class="timeline-card__date">Fecha</span>
+
                   <h3 class="timeline-card__title">Prueba actuada con un usuario</h3>
                   <p class="timeline-card__text">
                     Antes de contar con una versión completa del videojuego,
@@ -561,10 +578,13 @@
                 <figure class="timeline-card__media">
                   <img
                     src="img/07-prueba-actuada.jpg"
-                    alt="Prueba actuada del videojuego con un usuario"
+                    alt="Fotograma de una prueba en VR, usado como referencia visual de la interacción."
                     class="lightbox-trigger"
+                    loading="lazy"
+                    decoding="async"
                     tabindex="0"
                   />
+                  <figcaption>Fotograma de una prueba en VR, usado como referencia visual de la interacción. <a href="https://youtu.be/Wxb60gsFOcI" target="_blank" rel="noopener">Ver video</a></figcaption>
                 </figure>
 
               </div>
@@ -581,7 +601,7 @@
               <div class="timeline-card__layout timeline-card__layout--reverse">
 
                 <div class="timeline-card__body">
-                  <span class="timeline-card__date">Fecha</span>
+
                   <h3 class="timeline-card__title">Feedback y nueva visión</h3>
                   <p class="timeline-card__text">
                     La retroalimentación obtenida durante las primeras pruebas
@@ -595,10 +615,13 @@
                 <figure class="timeline-card__media">
                   <img
                     src="img/08-feedback.jpg"
-                    alt="Revisión del feedback obtenido durante las pruebas"
+                    alt="Fotograma de la entrevista de retroalimentación · Usuario 01."
                     class="lightbox-trigger"
+                    loading="lazy"
+                    decoding="async"
                     tabindex="0"
                   />
+                  <figcaption>Fotograma de la entrevista de retroalimentación · Usuario 01. <a href="https://youtu.be/riSUbCj4L6M" target="_blank" rel="noopener">Ver video</a></figcaption>
                 </figure>
 
               </div>
@@ -615,23 +638,27 @@
               <div class="timeline-card__layout">
 
                 <div class="timeline-card__body">
-                  <span class="timeline-card__date">Fecha</span>
+
                   <h3 class="timeline-card__title">Desarrollo y más pruebas</h3>
                   <p class="timeline-card__text">
-                    Dividimos el proyecto para que cada integrante pudiera desarrollar
-                    componentes específicos de forma paralela. Utilizamos ramas de
-                    Git para organizar el trabajo e integramos progresivamente los
-                    cambios mientras continuábamos realizando pruebas con usuarios.
+                    Dividimos el trabajo por sistemas e integramos el escenario interior
+                    y exterior, la radio, el clima, los zombies por oleadas y el combate
+                    con armas VR. El proyecto también incorpora daño, salud del jugador
+                    y condiciones de victoria o derrota; la aceptación final del hand
+                    tracking y las físicas en Quest está documentada como pendiente.
                   </p>
                 </div>
 
                 <figure class="timeline-card__media">
                   <img
                     src="img/09-desarrollo.jpg"
-                    alt="Proceso de desarrollo colaborativo del videojuego"
+                    alt="Fotograma de otra interacción con el prototipo durante una prueba · Usuario 01."
                     class="lightbox-trigger"
+                    loading="lazy"
+                    decoding="async"
                     tabindex="0"
                   />
+                  <figcaption>Fotograma de otra interacción con el prototipo durante una prueba · Usuario 01. <a href="https://youtu.be/yBjjnt1almg" target="_blank" rel="noopener">Ver video</a></figcaption>
                 </figure>
 
               </div>
@@ -648,7 +675,7 @@
               <div class="timeline-card__layout timeline-card__layout--reverse">
 
                 <div class="timeline-card__body">
-                  <span class="timeline-card__date">Fecha</span>
+
                   <h3 class="timeline-card__title">Presentación en clase</h3>
                   <p class="timeline-card__text">
                     Presentamos una versión funcional del avance del videojuego
@@ -661,10 +688,13 @@
                 <figure class="timeline-card__media">
                   <img
                     src="img/10-presentacion.jpg"
-                    alt="Presentación del avance del videojuego en clase"
+                    alt="Fotograma de una prueba del prototipo en el aula · Usuario 03."
                     class="lightbox-trigger"
+                    loading="lazy"
+                    decoding="async"
                     tabindex="0"
                   />
+                  <figcaption>Fotograma de una prueba del prototipo en el aula · Usuario 03. <a href="https://youtu.be/aNvyL-mXzZE" target="_blank" rel="noopener">Ver video</a></figcaption>
                 </figure>
 
               </div>
@@ -686,9 +716,9 @@
           <p class="section-heading__label">03 / PRUEBAS</p>
           <h2 class="section-heading__title">Pruebas con usuarios</h2>
           <p class="section-heading__text">
-            Durante el desarrollo realizamos sesiones de prueba para observar
-            cómo los usuarios entendían el objetivo del juego, reaccionaban
-            a los estímulos y se desenvolvían dentro de la propuesta inmersiva.
+            Se registraron siete videos con cuatro usuarios para observar la
+            comprensión del juego, el uso de armas, las señales de audio y la
+            inmersión en el entorno de realidad virtual.
           </p>
         </div>
 
@@ -718,56 +748,123 @@
 
         <div class="video-grid">
 
-          <!-- ===================================== -->
-          <!-- EDITABLE: VIDEO DE YOUTUBE 1 -->
-          <!-- Sustituye TU_ID_VIDEO_1 -->
-          <!-- ===================================== -->
           <article class="video-card reveal">
-
             <div class="video-card__frame">
               <iframe
-                src="https://www.youtube.com/embed/TU_ID_VIDEO_1"
-                title="Prueba con usuario 1"
+                src="https://www.youtube.com/embed/riSUbCj4L6M"
+                title="Prueba con usuario 01, video 1"
                 loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
               ></iframe>
             </div>
-
             <div class="video-card__body">
-              <h3>Prueba con usuario 01</h3>
-              <p>
-                Registro de una sesión de prueba en la que se observó cómo
-                el usuario reaccionaba ante las situaciones y mecánicas del juego.
-              </p>
+              <h3>Usuario 01 · Video 1</h3>
+              <p>Entrevista sobre el ingreso a la cabaña, las señales de radio, el uso de armas y la dificultad inicial.</p>
             </div>
-
           </article>
 
-          <!-- ===================================== -->
-          <!-- EDITABLE: VIDEO DE YOUTUBE 2 -->
-          <!-- Sustituye TU_ID_VIDEO_2 -->
-          <!-- ===================================== -->
           <article class="video-card reveal">
-
             <div class="video-card__frame">
               <iframe
-                src="https://www.youtube.com/embed/TU_ID_VIDEO_2"
-                title="Prueba con usuario 2"
+                src="https://www.youtube.com/embed/yBjjnt1almg"
+                title="Prueba con usuario 01, video 2"
                 loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
               ></iframe>
             </div>
-
             <div class="video-card__body">
-              <h3>Prueba con usuario 02</h3>
-              <p>
-                Segunda sesión utilizada para seguir validando la experiencia,
-                el entendimiento del juego y la percepción del usuario.
-              </p>
+              <h3>Usuario 01 · Video 2</h3>
+              <p>Registro complementario de la sesión de prueba del usuario 01.</p>
             </div>
+          </article>
 
+          <article class="video-card reveal">
+            <div class="video-card__frame">
+              <iframe
+                src="https://www.youtube.com/embed/Wxb60gsFOcI"
+                title="Prueba con usuario 02, video 1"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-card__body">
+              <h3>Usuario 02 · Video 1</h3>
+              <p>Registro de la prueba de juego con el usuario 02.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal">
+            <div class="video-card__frame">
+              <iframe
+                src="https://www.youtube.com/embed/Q--c7cYu-MA"
+                title="Entrevista de feedback del usuario 02"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-card__body">
+              <h3>Usuario 02 · Entrevista de feedback</h3>
+              <p>Preguntas sobre la ambientación, el agarre de las armas, la dificultad del combate y la claridad de las instrucciones de audio.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal">
+            <div class="video-card__frame">
+              <iframe
+                src="https://www.youtube.com/embed/aNvyL-mXzZE"
+                title="Prueba con usuario 03, video 1"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-card__body">
+              <h3>Usuario 03 · Video 1</h3>
+              <p>Registro de la prueba de juego con el usuario 03.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal">
+            <div class="video-card__frame">
+              <iframe
+                src="https://www.youtube.com/embed/LKpaHTWtYJc"
+                title="Prueba con usuario 03, video 2"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-card__body">
+              <h3>Usuario 03 · Video 2</h3>
+              <p>Entrevista sobre la inmersión, el ambiente, el uso de armas y la progresión de los zombies.</p>
+            </div>
+          </article>
+
+          <article class="video-card reveal">
+            <div class="video-card__frame">
+              <iframe
+                src="https://www.youtube.com/embed/95JBktHGLCc"
+                title="Prueba con usuario 04"
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="video-card__body">
+              <h3>Usuario 04</h3>
+              <p>Registro de la prueba de juego con el usuario 04.</p>
+            </div>
           </article>
 
         </div>
@@ -793,57 +890,47 @@
 
         <div class="feedback-summary reveal">
           <article class="feedback-summary__card">
-            <h3>Hallazgos principales</h3>
+            <h3>Hallazgos de las entrevistas 01, 02 y 03</h3>
             <ul>
-              <li>La ambientación y la temática zombie resultaron atractivas.</li>
-              <li>La experiencia se percibió más inmersiva al incorporar actuación y escenificación.</li>
-              <li>Los usuarios valoraron mejor la idea cuando entendieron claramente el objetivo del juego.</li>
-              <li>El feedback ayudó a definir nuevas mejoras en desarrollo, ambientación e interacción.</li>
+              <li>La radio y los sonidos del entorno ayudan a orientarse y entender qué hacer.</li>
+              <li>La señal roja al recibir daño comunica con claridad que el jugador está siendo atacado.</li>
+              <li>La iluminación, el audio y la aparición progresiva de zombies fortalecen la inmersión.</li>
+              <li>El bate y el hacha se sienten más naturales; la pistola requiere aprender mejor el agarre y la orientación.</li>
+              <li>Se sugirió revisar la resistencia del zombie grande y evitar que las armas se caigan con facilidad.</li>
+              <li>El usuario 02 propuso aumentar la dificultad del jefe final y hacer más audible la instrucción para disparar la bengala.</li>
             </ul>
           </article>
         </div>
 
         <div class="feedback-grid">
 
-          <!-- ===================================== -->
-          <!-- EDITABLE: FEEDBACK 1 -->
-          <!-- ===================================== -->
           <article class="feedback-card reveal">
-            <span class="feedback-card__tag">Usuario 01</span>
+            <span class="feedback-card__tag">Usuario 01 · Síntesis</span>
             <p class="feedback-card__quote">
-              “La idea me pareció interesante y más inmersiva de lo que esperaba,
-              especialmente por la ambientación y la forma en que se representó la experiencia.”
+              Las pistas de radio y la señal visual de daño le ayudaron a comprender la situación. Al inicio le costó agarrar y orientar las armas; sugirió revisar la vida del zombie grande y que las armas no se caigan.
             </p>
             <p class="feedback-card__insight">
-              Insight: reforzar la inmersión y mantener una introducción clara al objetivo del juego.
+              Mejora: añadir una introducción breve al manejo de armas y revisar su estabilidad física.
             </p>
           </article>
 
-          <!-- ===================================== -->
-          <!-- EDITABLE: FEEDBACK 2 -->
-          <!-- ===================================== -->
           <article class="feedback-card reveal">
-            <span class="feedback-card__tag">Usuario 02</span>
+            <span class="feedback-card__tag">Usuario 02 · Síntesis</span>
             <p class="feedback-card__quote">
-              “Entendí la propuesta general, pero creo que algunas acciones podrían explicarse mejor
-              para que el jugador se adapte más rápido.”
+              El sonido de los zombies y las armas disponibles le ayudaron a entender que debía defenderse. Valoró poder cambiar de arma cuando perdió el bate, aunque le costó sujetar y orientar la pistola. Consideró el combate equilibrado, pero pidió un jefe final más difícil y una instrucción de la bengala más audible. No reportó mareos ni incomodidad durante la sesión.
             </p>
             <p class="feedback-card__insight">
-              Insight: mejorar la explicación inicial, señales del entorno y orientación al usuario.
+              Mejora: corregir el agarre y la orientación de la pistola, reforzar el aviso de la bengala y ajustar la dificultad del jefe final.
             </p>
           </article>
 
-          <!-- ===================================== -->
-          <!-- EDITABLE: FEEDBACK 3 -->
-          <!-- ===================================== -->
           <article class="feedback-card reveal">
-            <span class="feedback-card__tag">Usuario 03</span>
+            <span class="feedback-card__tag">Usuario 03 · Síntesis</span>
             <p class="feedback-card__quote">
-              “Lo que más me gustó fue que no solo vi una idea, sino que sentí que ya tenía una forma concreta
-              de convertirse en videojuego.”
+              Destacó el sonido, la iluminación y la aparición inesperada de zombies. Percibió una progresión entre enemigos y encontró más intuitivo golpear con el bate o el hacha que agarrar y apuntar con la pistola.
             </p>
             <p class="feedback-card__insight">
-              Insight: seguir fortaleciendo la conexión entre narrativa, interacción y prototipo funcional.
+              Mejora: conservar la ambientación y simplificar el agarre y la orientación de la pistola.
             </p>
           </article>
 
@@ -861,7 +948,7 @@
 
       <!-- EDITABLE: nombre del juego -->
       <p>
-        <span>NOMBRE DEL JUEGO</span>
+        <span>El último en pie</span>
         · Interacción Humano-Computador · 2026
       </p>
 

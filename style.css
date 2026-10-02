@@ -866,6 +866,8 @@ a {
   height: 100%;
 
   object-fit: cover;
+  object-position: var(--portrait-position, center);
+  transform: rotate(var(--portrait-rotation, 0deg));
 
   transition:
     transform var(--transition-normal),
@@ -873,11 +875,23 @@ a {
 }
 
 .team-card:hover .team-card__image {
-  transform: scale(1.06);
+  transform: rotate(var(--portrait-rotation, 0deg)) scale(1.06);
 
   filter:
     brightness(1.04)
     contrast(1.05);
+}
+
+.team-card__image--mariana {
+  --portrait-rotation: -90deg;
+}
+
+.team-card__image--claudia {
+  --portrait-position: 50% 25%;
+}
+
+.team-card__image--sebastian {
+  --portrait-position: 50% 10%;
 }
 
 .team-card__name {
@@ -1049,7 +1063,7 @@ a {
   flex-direction: column;
   justify-content: center;
 
-  padding: 38px;
+  padding: 64px 38px 38px;
 }
 
 .timeline-card__body::before {
@@ -1066,20 +1080,6 @@ a {
   background: var(--blood-red-bright);
 
   box-shadow: var(--shadow-red);
-}
-
-.timeline-card__date {
-  display: inline-block;
-
-  margin-top: 18px;
-  margin-bottom: 12px;
-
-  font-family: var(--font-special);
-
-  font-size: 0.86rem;
-  letter-spacing: 0.1em;
-
-  color: var(--toxic-green-bright);
 }
 
 .timeline-card__title {
@@ -1171,17 +1171,38 @@ a {
   z-index: 1;
 
   width: 100%;
-  height: 100%;
+  height: 340px;
 
   min-height: 340px;
 
-  object-fit: cover;
+  object-fit: contain;
 
   cursor: zoom-in;
 
   transition:
     transform 0.6s ease,
     filter var(--transition-normal);
+}
+
+/* Documentos y fotogramas completos, con su fuente visible. */
+.timeline-card__media--document img {
+  background: #f2f2f2;
+}
+
+.timeline-card__media figcaption {
+  position: relative;
+  z-index: 3;
+  padding: 12px 16px;
+  background: #101010;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.timeline-card__media figcaption a {
+  color: var(--toxic-green-bright);
+  text-decoration: underline;
+  white-space: nowrap;
 }
 
 .timeline-card:hover .timeline-card__media img {
@@ -1870,7 +1891,7 @@ img.image-error {
   }
 
   .timeline-card__body {
-    padding: 28px;
+    padding: 54px 28px 28px;
   }
 
   .timeline-card__body::before {
@@ -1978,7 +1999,7 @@ img.image-error {
   }
 
   .timeline-card__body {
-    padding: 24px 20px;
+    padding: 50px 20px 24px;
   }
 
   .timeline-card__body::before {
