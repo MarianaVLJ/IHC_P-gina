@@ -2094,12 +2094,16 @@ img.image-error {
 }
 
 .storyboard-scene {
+  position: relative;
   height: 100%;
   margin: 0;
   overflow: hidden;
   background: var(--bg-card);
   border: 1px solid var(--border-dark);
   border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.24);
+  transition: opacity 0.6s ease, transform 0.35s ease,
+    border-color 0.35s ease, box-shadow 0.35s ease;
 }
 
 .storyboard-scene img {
@@ -2109,6 +2113,56 @@ img.image-error {
   object-fit: contain;
   background: #111;
   cursor: zoom-in;
+  transition: filter 0.35s ease;
+}
+
+.storyboard-scene::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(120deg, transparent 25%, rgba(255, 255, 255, 0.08) 48%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.storyboard-scene:focus-within {
+  border-color: var(--blood-red-bright);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.4), 0 0 20px rgba(241, 14, 56, 0.16);
+}
+
+.storyboard-scene img:focus-visible {
+  outline: 3px solid var(--toxic-green-bright);
+  outline-offset: -5px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .storyboard-scene.is-visible:hover {
+    transform: translateY(-6px);
+    border-color: var(--blood-red-bright);
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.45), 0 0 24px rgba(241, 14, 56, 0.18);
+  }
+
+  .storyboard-scene:hover img {
+    filter: contrast(1.06) brightness(1.05);
+  }
+
+  .storyboard-scene:hover::after {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .storyboard-scene,
+  .storyboard-scene img,
+  .storyboard-scene::after {
+    transition: none;
+  }
+
+  .storyboard-scene.is-visible:hover {
+    transform: none;
+  }
 }
 
 .storyboard-scene figcaption {
